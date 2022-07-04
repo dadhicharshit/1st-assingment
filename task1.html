@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="task.css">
+  <link rel="icon" href="/images/2.jpg">
+  <title>CONTACT FORM</title>
+</head>
+<body>
+  <div class="container">
+    <form>
+      <h3>GET INFO</h3>
+      <input type="text" id="name" placeholder="Your Name" required>
+      <textarea id="message"  rows="4" placeholder="Address....."></textarea>
+      <div class="parent">
+      <div class="radiobt">   
+      <h4> Gender:</h4>
+         <input type="radio" id="male" name="Gender" value="male">
+         <label for="male">Male</label>
+         <input type="radio" id="Female" name="Gender" value="Female">
+         <label for="Female">Female</label>
+       </div>
+       <div class="checkbox">
+      <h4>Programming Languages</h4>     
+              <input type="checkbox" id="C" name="C" value="C"/>    
+                 <label>C</label>    
+              <input type="checkbox" id="Java" name="Java" value="Java" checked=?yes?/>    
+                 <label>Java</label>    
+              <input type="checkbox" id="Python" name="Python" value="Python"/>    
+                 <label>Python</label>  
+         <input type="checkbox" id="PHP" name="PHP" value="PHP"/>    
+                 <label>PHP</label>  
+       </div>
+      </div>
+    <button type="submit" onclick="javascript:alert('The Form is Submitted')">Submit</button>
+    
+<script>
+  var input = document.getElementById("myInput");
+  input.addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+      event.preventDefault();
+      document.getElementById("myBtn").click();
+    }
+  });
+  </script>
+  
+</div>
+</body>
+</html>
